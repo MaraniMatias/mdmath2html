@@ -1,5 +1,5 @@
 module.exports = function(markdownText, title) {
-  var markdown2html = require('./build.js');
+  var markdown2html = require('./markdown-parser.js');
   return '<!DOCTYPE html><html><head><title>'+title+'</title>' +
     '<meta name="viewport" content="width=device-width, initial-scale=1">' +
     '<link rel="stylesheet" href="./node_modules/github-markdown-css/github-markdown.css">' +
