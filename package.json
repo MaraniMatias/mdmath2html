@@ -1,13 +1,14 @@
 {
-  "name": "mdmathe2html",
+  "name": "mdmath2html",
   "version": "0.0.1",
-  "description": "",
+  "description": "Convert markdown files with math annotations to html files.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "cd bin/; ./md2html ../test/test.md"
   },
-  "author": "Marani Matias Ezequiel",
-  "license": "ISC",
+   "bin": {
+    "mdtohtml": "./bin/cli"
+},
   "dependencies": {
     "commander": "^2.9.0",
     "github-markdown-css": "^2.6.0",
@@ -16,5 +17,34 @@
     "markdown-it-html5-embed": "^0.3.2",
     "markdown-it-mathjax": "^2.0.0",
     "markdown-it-sub": "^1.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MaraniMatias/mdmath2html.git"
+  },
+  "author": "Marani Matias Ezequiel",
+  "email": "maranimatias@gmail.com",
+  "license": "MIT",
+  "keywords": [
+    "mathjax",
+    "md",
+    "asciimath",
+    "markdown",
+    "markdown2html",
+    "markdowntohtml",
+    "markdown to html",
+    "md2html",
+    "md to html",
+    "markdtex2html",
+    "markdtex to html",
+    "mdtex to html",
+    "mdmath to html"
+  ],
+  "engines": {
+    "node": "6.10.2",
+    "npm": "4.5.0"
+ },
+  "jshintConfig": {
+    "esversion": 6
   }
 }
