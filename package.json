@@ -1,0 +1,20 @@
+{
+  "name": "mdmathe2html",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Marani Matias Ezequiel",
+  "license": "ISC",
+  "dependencies": {
+    "commander": "^2.9.0",
+    "github-markdown-css": "^2.6.0",
+    "highlight.js": "^9.10.0",
+    "markdown-it": "^8.3.1",
+    "markdown-it-html5-embed": "^0.3.2",
+    "markdown-it-mathjax": "^2.0.0",
+    "markdown-it-sub": "^1.0.0"
+  }
+}
