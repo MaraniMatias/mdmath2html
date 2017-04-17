@@ -82,8 +82,10 @@ H~2~O
 $\sqrt{3x-1}+(1+x)^2$
 **Alpha**, _bravo_, and ~~Charlie~~.
 # Math Rulez! **Bold**
-H~2~0
-H_2_0
+$$H_{2}0$$
+
+Agua: \`H_{2}0\`
+
 I am using __markdown__.
 $\sqrt{3x-1}+(1+x)^2$
 $1 *2* 3$

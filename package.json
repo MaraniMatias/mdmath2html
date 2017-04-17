@@ -15,8 +15,7 @@
     "highlight.js": "^9.10.0",
     "markdown-it": "^8.3.1",
     "markdown-it-html5-embed": "^0.3.2",
-    "markdown-it-mathjax": "^2.0.0",
-    "markdown-it-sub": "^1.0.0"
+    "markdown-it-mathjax": "^2.0.0"
   },
   "repository": {
     "type": "git",
