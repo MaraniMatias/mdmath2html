@@ -2,40 +2,6 @@ underline_in_word
 
 _underline_italic_
 
-# Auto Link
-
-## In Plain Text
-
-http://abc
-
-http://abc.com http://abc.com
-
-http://abc.com/a?x=%2F
-
-https://abc.com/a?x=%2F
-
-xxx http://abc.com yyy
-
-## In Title: http://abc.com
-
-## In List
-
-- list http://abc.com
-    - list http://abc.com
-
-## In Blockquote
-> list http://abc.com
-
-# Not Auto Link
-
-**xxx http://abc.com yyy**
-
-`http://abc.com`
-
-```
-http://abc.com
-```
-
 ## strike through
 
 ~~strikeThrough~~
@@ -64,6 +30,7 @@ xx~~strikeThrough~~yy
 ```
 xx~~notStrikeThrough~~yy
 ```
+
 \`\`\`[[0,1,0],[0,1,5]]\`\`\`
 
 \begin{align}
@@ -111,6 +78,6 @@ $$E = mc^2$$
 \oint_Cx^3 dx+4y^2 dy
 \`\`\`
 
-\`\`\`
-\sum_(i=1)^n i^3=((n(n+1))/2)^2
-\`\`\`(2)
+\`sum_(i=1)^n i^3=((n(n+1))/2)^2\`
+
+\`lim_(x->oo) int_0^1 f(x)dx\`
