@@ -9,8 +9,8 @@ var path = require("path");
 var program = require('commander')
   .version(require('../package.json').version)
   .usage('[options] <file ...>')
-  .option('-t, --title', 'Title of HTML file.')
-  .option('-o, --outDir', 'Directory where to save the files.')
+  .option('-t, --title [title]', 'Title of HTML file.')
+  .option('-o, --outDir [outDir]', 'Directory where to save the files.')
   .option('-f, --force', 'Ignore file format.')
   .parse(process.argv);
 var build = require('../lib/build.js');
@@ -29,7 +29,7 @@ function render(mdFile) {
       fs.writeFile(path.resolve(program.outDir || file.dir, file.name + '.html'), build(data.toString(), program.title || file.name), 'utf8');
     });
   } else {
-    throw new Error('This is not markdown file.\n You can use option -f');
+    console.log('This is not markdown file.\t You can use option -f');
   }
 }
 
