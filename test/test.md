@@ -83,6 +83,7 @@ $\sqrt{3x-1}+(1+x)^2$
 **Alpha**, _bravo_, and ~~Charlie~~.
 # Math Rulez! **Bold**
 H~2~0
+H_2_0
 I am using __markdown__.
 $\sqrt{3x-1}+(1+x)^2$
 $1 *2* 3$
@@ -90,12 +91,12 @@ $1 *2* 3$
 When $a \ne 0$, there are two solutions to \(ax^2 + bx + c = 0\) and they are
 $$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$
 
-$E = mc^2$
+$$E = mc^2$$
 
 \`@(1/2[1-(1/2)^n])/(1-(1/2))=s_n@`
 
 \`
-\E~c=(a+5)^1 over_2
+\E_c=( (a+5)^1 )/ (2)
 \`
 
 \`\`\`math
