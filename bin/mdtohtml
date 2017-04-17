@@ -26,7 +26,7 @@ function render(mdFile){
   console.log('Markdown File %s to %s', file.base, file.name + '.html\n','Dir:',file.dir);
   fs.readFile(mdFile, function(err, data) {
     if (err) throw err;
-    fs.writeFile(file.name + '.html', build(data.toString(), program.title || file.name), 'utf8');
+    fs.writeFile(path.resolve(file.dir, file.name + '.html'), build(data.toString(), program.title || file.name), 'utf8');
   });
   } else {
     throw new Error('This is not markdown file.\n You can use option -f');

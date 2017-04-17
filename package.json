@@ -1,6 +1,6 @@
 {
   "name": "mdmath2html",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Convert markdown files with math annotations to html files.",
   "main": "index.js",
   "scripts": {
@@ -28,6 +28,9 @@
   "keywords": [
     "mathjax",
     "md",
+    "command",
+    "to html file",
+    "mkd",
     "asciimath",
     "markdown",
     "markdown2html",
