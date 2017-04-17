@@ -1,13 +1,13 @@
 {
   "name": "mdmath2html",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Convert markdown files with math annotations to html files.",
   "main": "index.js",
   "scripts": {
     "test": "cd bin/; ./md2html ../test/test.md"
   },
    "bin": {
-    "mdtohtml": "./bin/cli"
+    "mdtohtml": "./bin/mdtohtml"
 },
   "dependencies": {
     "commander": "^2.9.0",
@@ -33,6 +33,8 @@
     "markdown2html",
     "markdowntohtml",
     "markdown to html",
+    "markdown math to html",
+    "markdown to html file",
     "md2html",
     "md to html",
     "markdtex2html",
