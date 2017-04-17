@@ -90,17 +90,22 @@ $1 *2* 3$
 When $a \ne 0$, there are two solutions to \(ax^2 + bx + c = 0\) and they are
 $$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$
 
-`$E = mc^2$`
-`@(1/2[1-(1/2)^n])/(1-(1/2))=s_n@`
+$E = mc^2$
+
+\`@(1/2[1-(1/2)^n])/(1-(1/2))=s_n@`
+
+\`
+\E~c=(a+5)^1 over_2
+\`
 
 \`\`\`math
-\oint_C x^3\, dx + 4y^2\, dy
+\int_C x^3\, dx + 4y^2\, dy
 \`\`\`
 
 \`\`\`AsciiMath
-oint_Cx^3 dx+4y^2 dy
+\oint_Cx^3 dx+4y^2 dy
 \`\`\`
 
 \`\`\`
-sum_(i=1)^n i^3=((n(n+1))/2)^2
+\sum_(i=1)^n i^3=((n(n+1))/2)^2
 \`\`\`(2)
