@@ -6,16 +6,15 @@
   "scripts": {
     "test": "cd bin/; ./md2html ../test/test.md"
   },
-   "bin": {
+  "bin": {
     "mdtohtml": "./bin/mdtohtml"
-},
+  },
   "dependencies": {
     "commander": "^2.9.0",
     "github-markdown-css": "^2.6.0",
     "highlight.js": "^9.10.0",
     "markdown-it": "^8.3.1",
-    "markdown-it-html5-embed": "^0.3.2",
-    "markdown-it-mathjax": "^2.0.0"
+    "markdown-it-html5-embed": "^0.3.2"
   },
   "repository": {
     "type": "git",
@@ -47,7 +46,7 @@
   "engines": {
     "node": "6.10.2",
     "npm": "4.5.0"
- },
+  },
   "jshintConfig": {
     "esversion": 6
   }

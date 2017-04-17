@@ -58,20 +58,22 @@ xx~~strikeThrough~~yy
 ## In Table
 
 |  Cool  |
-| ------:|
+|:------ |
 | 1600 http://abc.com |
 
 ```
 xx~~notStrikeThrough~~yy
 ```
+\`\`\`[[0,1,0],[0,1,5]]\`\`\`
 
-## tex
+\begin{align}
+ E &= mc^2                              \\
+ m &= \frac{m_0}{\sqrt{1-\frac{v^2}{c^2}}}
+\end{align}
 
 \begin{equation} \begin{pmatrix} 1 & 0\ 0 & 1 \end{pmatrix} \end{equation}
 
 ###### text after tex
-
-H~2~O
 
 | Tables        | Are           | Cool  |
 | ------------- |:-------------:| -----:|
