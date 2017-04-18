@@ -12,10 +12,11 @@ var program = require('commander')
   .option('-t, --title [title]', 'Title of HTML file.')
   .option('-o, --outDir [outDir]', 'Directory where to save the files.')
   .option('-f, --force', 'Ignore file format.')
+  .option('-s, --silence', 'Does not display info in console')
   .parse(process.argv);
 var build = require('../lib/build.js');
 
-if (program.title) console.log('Html title:', program.title);
+if (!program.silence &&  program.title) console.log('Html title:', program.title);
 for (var i = 0, f = program.args.length; i < f; i++) {
   render(program.args[i]);
 }
@@ -23,13 +24,15 @@ for (var i = 0, f = program.args.length; i < f; i++) {
 function render(mdFile) {
   var file = path.parse(mdFile);
   if (/^.(md(tex)?|mark(down|math))$/i.test(file.ext) || program.force) {
-    console.log('Markdown File %s to %s', file.base, file.name + '.html\n', 'Dir:', file.dir);
+    if (!program.silence) {
+      console.log('Markdown File %s to %s', file.base, file.name + '.html\n', 'Dir:', file.dir);
+    }
     fs.readFile(mdFile, function(err, data) {
       if (err) throw err;
       fs.writeFile(path.resolve(program.outDir || file.dir, file.name + '.html'), build(data.toString(), program.title || file.name), 'utf8');
     });
   } else {
-    console.log('This is not markdown file.\t You can use option -f');
+    console.error('This is not markdown file.\t You can use option -f');
   }
 }
 
