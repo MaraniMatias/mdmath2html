@@ -4,34 +4,46 @@ _underline_italic_
 
 ## strike through
 
-~~strikeThrough~~
-xx~~strikeThrough~~yy
+  ~~strikeThrough~~
+  xx~~strikeThrough~~yy
 
-- in list ~~strikeThrough~~yy
-    - in list ~~strikeThrough~~yy
+  -
+  in list~~strikeThrough~~yy -
+  in list~~strikeThrough~~yy
 
-> in block ~~strikeThrough~~yy
+  >
+  in block~~strikeThrough~~yy
 
-~~multi
-   line~~
+  ~~multi
+line~~
 
-**in bold ~~strikeThrough~~ yyy**
+  **
+  in bold~~strikeThrough~~yyy **
 
-|  Cool  |
-| ------:|
-| 1 ~~strikeThrough~~ |
+  |
+  Cool |
+  |
+  -- -- --: |
+  |
+  1~~strikeThrough~~ |
 
-## In Table
+  ##In Table
 
-|  Cool  |
-|:------ |
-| 1600 http://abc.com |
+  |
+  Cool |
+  |
+  : -- -- -- |
+  |
+  1600 http: //abc.com |
 
-```
+  ``
+`
 xx~~notStrikeThrough~~yy
-```
+`
+``
 
-\`\`\`[[0,1,0],[0,1,5]]\`\`\`
+\
+`\`\`[[0,1,0],[0,1,5]]\`\`\`
 
 \begin{align}
  E &= mc^2                              \\
@@ -66,7 +78,8 @@ $$E = mc^2$$
 
 \`@(1/2[1-(1/2)^n])/(1-(1/2))=s_n@`
 
-\`
+\
+`
 \E_c=( (a+5)^1 )/ (2)
 \`
 
@@ -81,3 +94,18 @@ $$E = mc^2$$
 \`sum_(i=1)^n i^3=((n(n+1))/2)^2\`
 
 \`lim_(x->oo) int_0^1 f(x)dx\`
+
+$$ce{^{227}_{90}Th+}$$
+
+\\(ce{^{227}_{90}Th+}\\)
+
+\\[
+(x_{1}+x_{2})^2=x_{1}^{2}+2x_{1}x_{2}+x_{2}^{2}
+\\]
+
+\\[X+a ≥â ⎯⎯∑iNlimx→kδC\\]
+
+\\begin{array}{cc}
+  a & b \\\\
+  c & c
+\\end{array}
