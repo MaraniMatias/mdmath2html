@@ -8,7 +8,7 @@ npm install -g mdmath2html
 mdtohtml file.md
 ```
 
-## Options:
+### Options:
 Usage `mdtohtml [options] <file ...>`
 * `-t, --title` Title of HTML file. *default:* Markdown file name.
 * `-o, --outDir` Directory where to save the files. *default:* Same director of the markdown file.
