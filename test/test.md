@@ -7,43 +7,30 @@ _underline_italic_
   ~~strikeThrough~~
   xx~~strikeThrough~~yy
 
-  -
-  in list~~strikeThrough~~yy -
-  in list~~strikeThrough~~yy
+  -  in list~~strikeThrough~~yy
+   -  in list~~strikeThrough~~yy
 
-  >
-  in block~~strikeThrough~~yy
+  >  in block~~strikeThrough~~yy
+  
+  ~~multi line~~
 
-  ~~multi
-line~~
+  **  in bold~~strikeThrough~~yyy **
 
-  **
-  in bold~~strikeThrough~~yyy **
-
-  |
-  Cool |
-  |
-  -- -- --: |
-  |
-  1~~strikeThrough~~ |
+  |  Cool |
+  | ------:|
+  | 1~~strikeThrough~~ |
 
   ##In Table
 
-  |
-  Cool |
-  |
-  : -- -- -- |
-  |
-  1600 http: //abc.com |
+  |  Cool  |
+  |:------ |
+  | 1600 http: //abc.com |
 
-  ``
-`
+```
 xx~~notStrikeThrough~~yy
-`
-``
+```
 
-\
-`\`\`[[0,1,0],[0,1,5]]\`\`\`
+\`\`\`[[0,1,0],[0,1,5]]\`\`\`
 
 \begin{align}
  E &= mc^2                              \\
@@ -76,10 +63,9 @@ $$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$
 
 $$E = mc^2$$
 
-\`@(1/2[1-(1/2)^n])/(1-(1/2))=s_n@`
+\`@(1/2[1-(1/2)^n])/(1-(1/2))=s_n@\`
 
-\
-`
+\`
 \E_c=( (a+5)^1 )/ (2)
 \`
 
