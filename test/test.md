@@ -109,3 +109,25 @@ $$ce{^{227}_{90}Th+}$$
   a & b \\\\
   c & c
 \\end{array}
+
+\\[
+\frac{1}{5}+\frac{1}{3}=\frac{3+5}{5 \cdot 3}=\frac{8}{15}
+\\]
+
+\\({_p}VC\frac{dT}{dt} = wC(T_i-T)+q\\) *`(1.3)`*
+
+$${_{90}T}$$
+
+\\({_{90}T}\\)
+
+\\(\boxed{\text{boxed text}}\\)
+\\(a+{b+c\brace d+e}+f\\)
+\\( \buildrel \alpha\beta \over \longrightarrow \\)
+\\(|x| = 
+\cases{
+x  & \text{if } x\ge 0\cr
+-x & \text{if } x\lt 0
+}\\)
+
+$$\overleftarrow{\text{the argument}}&&
+$$\underleftrightarrow{\hspace1in}$$
