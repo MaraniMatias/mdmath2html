@@ -129,5 +129,5 @@ x  & \text{if } x\ge 0\cr
 -x & \text{if } x\lt 0
 }\\)
 
-$$\overleftarrow{\text{the argument}}&&
-$$\underleftrightarrow{\hspace1in}$$
+\\(\overleftarrow{\text{the argument}}\\)
+\\(\underleftrightarrow{\hspace1in}\\)
