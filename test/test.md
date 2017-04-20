@@ -109,11 +109,45 @@ $${_{90}T}$$
 \\(\boxed{\text{boxed text}}\\)
 \\(a+{b+c\brace d+e}+f\\)
 \\( \buildrel \alpha\beta \over \longrightarrow \\)
-\\(|x| = 
-\cases{
-x  & \text{if } x\ge 0\cr
--x & \text{if } x\lt 0
-}\\)
+
+\\(|x| = \cases{ x  & \text{if } x\ge 0\cr -x & \text{if } x\lt 0 }\\)
+\`|x|= { (x , if x ge 0 text(,)) , (-x , if x <0.):}}\`
 
 \\(\overleftarrow{\text{the argument}}\\)
 \\(\underleftrightarrow{\hspace1in}\\)
+
+### Transformada de la derivada.
+
+\`L{(df(t))/(dt)}= f(s)s-f(0)\` *`(2.2)`*
+donde \`f(s)=L{f(s)}\` y \`f(0)\` es \`f(t) con t=0\`
+
+*Probamos*
+
+\`L{(df(t))/(dt)}=\int_0^oo (df)/(dt)e^{-st}dt\`
+
+> *Por partes* 
+> \`\int udv=uv-\int udu\`
+>
+> \`u=e^{-st}\` \`du=(df)/(dt)dt => du = -se^{-st}dt \and  u = f(t)\`
+
+\`\int_0^oo (df)/(dt)e^{-st}dt = [f(t)e^{-st}]_0^oo + s \int_0^oo f(t)e^{-st}dt=-f(0)+f(s)s\`
+
+Para encontrar la transformada de la segunda derivada, hacemos uso de la transformada de la primera derivada dos veces, como sigue:
+
+\`L{(d^2f)/(dt^2)}=L{d/(dt)((df)/(dt))=sL{(df)/(dt)}-(df(t))/(dt)|_{t=0}\`
+
+\`= s[s^1f(s)-f(0)]-f^'(0)\`
+\`= s^2f(s)-s^1f(0)-f^'(0)\`
+
+Nota:
+ >\`(df(t))/(dt)|_{t=0}\`\`= f^'(0)\`
+
+\`L{(d^nf)/(dt^n)}=s^nf(s)-s^{n-1}f(0)-s^{n-2}f^(1)(0)- … - s^1f^{n-2}(0)-f^(n-1)(0)\`
+
+*Ejemplos*
+> Encontrar la transformada de Laplace de la funcion \`x(t)\`
+>
+> Condiciones iniciales.
+> \`x(0)=(dx(t))/(dt)=(d^2x(0))/(dt^2)=0\`
+>
+> \`(d^3x)/(dt^3) + 4 (d^2x)/(dt^2) + 5(dx)/(dt) + 2x = 2\`
