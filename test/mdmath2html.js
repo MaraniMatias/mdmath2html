@@ -1,5 +1,5 @@
-var fs = require('fs');
-var mdmath2html = require('../index.js');
+const fs = require('fs');
+const mdmath2html = require('../index.js');
 
 var mdFile = fs.readFileSync('./test.md');
 

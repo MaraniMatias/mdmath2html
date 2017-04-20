@@ -1,12 +1,11 @@
 #!/usr/bin/env node
 
 'use strict';
-
 process.title = 'markdown mathjax to html';
 
-var fs = require("fs");
-var path = require("path");
-var program = require('commander')
+const fs = require("fs");
+const path = require("path");
+const program = require('commander')
   .version(require('../package.json').version)
   .usage('[options] <file ...>')
   .option('-t, --title [title]', 'Title of HTML file.')
@@ -14,23 +13,20 @@ var program = require('commander')
   .option('-f, --force', 'Ignore file format.')
   .option('-s, --silence', 'Does not display info in console')
   .parse(process.argv);
-var build = require('../lib/build.js');
+const build = require('../lib/build.js');
 
-if (!program.silence &&  program.title) console.log('Html title:', program.title);
-for (var i = 0, f = program.args.length; i < f; i++) {
+if (!program.silence && program.title) console.log('Html title:', program.title);
+for (let i = 0, f = program.args.length; i < f; i++) {
   render(program.args[i]);
 }
 
 function render(mdFile) {
-  var file = path.parse(mdFile);
-  if (/^.(md(tex)?|mark(down|math))$/i.test(file.ext) || program.force) {
+  let file = path.parse(mdFile);
+  if (program.force || /^.(md(tex)?|mark(down|math))$/i.test(file.ext)) {
     if (!program.silence) {
       console.log('Markdown File %s to %s', file.base, file.name + '.html\n', 'Dir:', file.dir);
     }
-    fs.readFile(mdFile, function(err, data) {
-      if (err) throw err;
-      fs.writeFile(path.resolve(program.outDir || file.dir, file.name + '.html'), build(data.toString(), program.title || file.name), 'utf8');
-    });
+    fs.writeFileSync(path.resolve(program.outDir || file.dir, file.name + '.html'), build(fs.readFileSync(mdFile).toString(), program.title || file.name), 'utf8');
   } else {
     console.error('This is not markdown file.\t You can use option -f');
   }
@@ -39,4 +35,9 @@ function render(mdFile) {
 // Error
 process.on('uncaughtException', function(err) {
   console.error("Exception", err.stack);
+});
+process.on('warning', (warning) => {
+  //console.warn(warning.name); // Print the warning name
+  console.warn('node:',warning.message); // Print the warning message
+  //console.warn(warning.stack); // Print the stack trace
 });
