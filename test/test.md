@@ -70,7 +70,7 @@ $$E = mc^2$$
 \`
 
 \`\`\`math
-\int_C x^3\, dx + 4y^2\, dy
+\int_C x^3\ dx + 4y^2\ dy
 \`\`\`
 
 \`\`\`AsciiMath
@@ -111,6 +111,7 @@ $${_{90}T}$$
 \\( \buildrel \alpha\beta \over \longrightarrow \\)
 
 \\(|x| = \cases{ x  & \text{if } x\ge 0\cr -x & \text{if } x\lt 0 }\\)
+
 \`|x|= { (x , if x ge 0 text(,)) , (-x , if x <0.):}}\`
 
 \\(\overleftarrow{\text{the argument}}\\)
