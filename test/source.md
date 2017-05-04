@@ -1,4 +1,7 @@
-﻿# Upmath: Math Online Editor
+[[toc]]
+
+
+# Upmath: Math Online Editor
 ### _Create web articles and&nbsp;blog posts with&nbsp;equations and&nbsp;diagrams_
 
 Upmath extremely simplifies this task by using Markdown and LaTeX. It converts the Markdown syntax extended with LaTeX equations support into HTML code you can publish anywhere on the web.
@@ -84,17 +87,17 @@ plots:
 
 $$\begin{tikzpicture}[scale=1.0544]\small
 \begin{axis}[axis line style=gray,
-	samples=120,
-	width=9.0cm,height=6.4cm,
-	xmin=-1.5, xmax=1.5,
-	ymin=0, ymax=1.8,
-	restrict y to domain=-0.2:2,
-	ytick={1},
-	xtick={-1,1},
-	axis equal,
-	axis x line=center,
-	axis y line=center,
-	xlabel=$x$,ylabel=$y$]
+  samples=120,
+  width=9.0cm,height=6.4cm,
+  xmin=-1.5, xmax=1.5,
+  ymin=0, ymax=1.8,
+  restrict y to domain=-0.2:2,
+  ytick={1},
+  xtick={-1,1},
+  axis equal,
+  axis x line=center,
+  axis y line=center,
+  xlabel=$x$,ylabel=$y$]
 \addplot[red,domain=-2:1,semithick]{exp(x)};
 \addplot[black]{x+1};
 \addplot[] coordinates {(1,1.5)} node{$y=x+1$};
