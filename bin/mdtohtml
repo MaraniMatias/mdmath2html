@@ -10,6 +10,7 @@ const program = require('commander')
   .usage('[options] <file ...>')
   .option('-t, --title [title]', 'Title of HTML file.')
   .option('-o, --outDir [outDir]', 'Directory where to save the files.')
+  .option('-l, --level', 'Level for table of contents.')
   .option('-f, --force', 'Ignore file format.')
   .option('-s, --silence', 'Does not display info in console')
   .parse(process.argv);
@@ -26,7 +27,13 @@ function render(mdFile) {
     if (!program.silence) {
       console.log('Markdown File %s to %s', file.base, file.name + '.html\n', 'Dir:', file.dir);
     }
-    fs.writeFileSync(path.resolve(program.outDir || file.dir, file.name + '.html'), build(fs.readFileSync(mdFile).toString(), program.title || file.name), 'utf8');
+    fs.writeFileSync(path.resolve(program.outDir || file.dir, file.name + '.html'),
+      build(fs.readFileSync(mdFile).toString(), program.title || file.name, {
+        tableContents: {
+          includeLevel: [1, 2, 3]
+        }
+      }), 'utf8'
+    );
   } else {
     console.error('This is not markdown file.\t You can use option -f');
   }
@@ -36,8 +43,8 @@ function render(mdFile) {
 process.on('uncaughtException', function(err) {
   console.error("Exception", err.stack);
 });
-process.on('warning', (warning) => {
+process.on('warning', function(warning) {
   //console.warn(warning.name); // Print the warning name
-  console.warn('node:',warning.message); // Print the warning message
+  console.warn('node:', warning.message); // Print the warning message
   //console.warn(warning.stack); // Print the stack trace
 });
