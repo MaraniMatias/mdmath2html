@@ -1,6 +1,6 @@
 {
   "name": "mdmath2html",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Convert markdown files with math annotations to html files.",
   "main": "index.js",
   "scripts": {
