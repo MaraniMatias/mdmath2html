@@ -1,22 +1,29 @@
 #!/usr/bin/env node
 
-'use strict';
-process.title = 'markdown mathjax to html';
+"use strict";
+process.title = "markdown mathjax to html";
 
 const fs = require("fs");
 const path = require("path");
-const program = require('commander')
-  .version(require('../package.json').version)
-  .usage('[options] <file ...>')
-  .option('-t, --title [title]', 'Title of HTML file.')
-  .option('-o, --outDir [outDir]', 'Directory where to save the files.')
-  .option('-l, --level', 'Level for table of contents.')
-  .option('-f, --force', 'Ignore file format.')
-  .option('-s, --silence', 'Does not display info in console')
+const program = require("commander")
+  .version(require("../package.json").version)
+  .usage("[options] <file ...>")
+  .option("-t, --title [title]", "Title of HTML file.")
+  .option("-o, --outDir [outDir]", "Directory where to save the files.")
+  .option(
+    "-l, --level 1,2,3",
+    "Level for table of contents. default: 1,2,3",
+    val => val.split(",").map(Number)
+  )
+  .option("-f, --force", "Ignore file format.")
+  .option("-off, --offLine", "CSS/JS files linked to local user, by default using CDN.")
+  .option("-s, --silence", "Does not display info in console.")
   .parse(process.argv);
-const build = require('../lib/build.js');
+const build = require("../lib/build.js");
 
-if (!program.silence && program.title) console.log('Html title:', program.title);
+if (!program.silence && program.title) {
+  console.log("Html title:", program.title);
+}
 for (let i = 0, f = program.args.length; i < f; i++) {
   render(program.args[i]);
 }
@@ -25,26 +32,35 @@ function render(mdFile) {
   let file = path.parse(mdFile);
   if (program.force || /^.(md(tex)?|mark(down|math))$/i.test(file.ext)) {
     if (!program.silence) {
-      console.log('Markdown File %s to %s', file.base, file.name + '.html\n', 'Dir:', file.dir);
+      console.log(
+        "Markdown File %s to %s",
+        file.base,
+        file.name + ".html",
+        "\nDir:",
+        file.dir
+      );
     }
-    fs.writeFileSync(path.resolve(program.outDir || file.dir, file.name + '.html'),
+    fs.writeFileSync(
+      path.resolve(program.outDir || file.dir, file.name + ".html"),
       build(fs.readFileSync(mdFile).toString(), program.title || file.name, {
+        offLine: program.offLine || false,
         tableContents: {
-          includeLevel: [1, 2, 3]
-        }
-      }), 'utf8'
+          includeLevel: program.level || [1, 2, 3],
+        },
+      }),
+      "utf8"
     );
   } else {
-    console.error('This is not markdown file.\t You can use option -f');
+    console.error("This is not markdown file.\t You can use option -f");
   }
 }
 
 // Error
-process.on('uncaughtException', function(err) {
+process.on("uncaughtException", function(err) {
   console.error("Exception", err.stack);
 });
-process.on('warning', function(warning) {
+process.on("warning", function(warning) {
   //console.warn(warning.name); // Print the warning name
-  console.warn('node:', warning.message); // Print the warning message
+  console.warn("node:", warning.message); // Print the warning message
   //console.warn(warning.stack); // Print the stack trace
 });
