@@ -21,7 +21,6 @@ Usage `mdtohtml [options] <file ...>`
 ```
 npm install mdmath2html --save
 ```
-
 ```javascript
 var fs = require("fs");
 var mdmath2html = require("mdmath2html");
@@ -39,3 +38,11 @@ fs.writeFile("mk2html.html", htmlFile, "utf8", function(err) {
   console.log("The file has been saved!");
 });
 ```
+## Dependencies
+- [github-markdown-css](https://github.com/sindresorhus/github-markdown-css)
+- [highlight.js](https://highlightjs.org)
+- [markdown-it](https://github.com/markdown-it/markdown-it)
+- [markdown-it-anchor](https://github.com/valeriangalliat/markdown-it-anchor)
+- [markdown-it-html5-embed](https://github.com/cmrd-senya/markdown-it-html5-embed)
+- [markdown-it-table-of-contents](https://github.com/Oktavilla/markdown-it-table-of-contents)
+- [mathjax](https://www.mathjax.org)
