@@ -16,7 +16,7 @@ const program = require("commander")
     val => val.split(",").map(Number)
   )
   .option("-f, --force", "Ignore file format.")
-  .option("-off, --offLine", "CSS/JS files linked to local user, by default using CDN.")
+  .option("--offLine", "CSS/JS files linked to local user, by default using CDN.")
   .option("-s, --silence", "Does not display info in console.")
   .parse(process.argv);
 const build = require("../lib/build.js");

@@ -15,7 +15,7 @@ Usage `mdtohtml [options] <file ...>`
 * `-f, --force` Ignore file format.
 * `-l, --level` Level for table of contents.
 * `-s, --silence` Does not display info in console.
-* `-off, --offLine` CSS/JS files linked to local user, by default using CDN.
+* `--offLine` CSS/JS files linked to local user, by default using CDN.
 
 ## Installation for your project.
 ```
