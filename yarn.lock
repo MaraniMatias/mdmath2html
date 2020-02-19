@@ -9,32 +9,25 @@ argparse@^1.0.7:
   dependencies:
     sprintf-js "~1.0.2"
 
-commander@2.9.0:
-  version "2.9.0"
-  resolved "https://registry.yarnpkg.com/commander/-/commander-2.9.0.tgz#9c99094176e12240cb22d6c5146098400fe0f7d4"
-  integrity sha1-nJkJQXbhIkDLItbFFGCYQA/g99Q=
-  dependencies:
-    graceful-readlink ">= 1.0.0"
+commander@^2.9.0:
+  version "2.20.3"
+  resolved "https://registry.yarnpkg.com/commander/-/commander-2.20.3.tgz#fd485e84c03eb4881c20722ba48035e8531aeb33"
+  integrity sha512-GpVkmM8vF2vQUkj2LvZmD35JxeJOLCwJ9cUkugyk2nuhbv3+mJvpLYYt+0+USMxE+oj+ey/lJEnhZw75x/OMcQ==
 
 entities@~1.1.1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/entities/-/entities-1.1.1.tgz#6e5c2d0a5621b5dadaecef80b90edfb5cd7772f0"
   integrity sha1-blwtClYhtdra7O+AuQ7ftc13cvA=
 
-github-markdown-css@2.6.0:
-  version "2.6.0"
-  resolved "https://registry.yarnpkg.com/github-markdown-css/-/github-markdown-css-2.6.0.tgz#cdc74bab566b039d7fbb74601f7821b109cf5918"
-  integrity sha1-zcdLq1ZrA51/u3RgH3ghsQnPWRg=
+github-markdown-css@^2.6.0:
+  version "2.10.0"
+  resolved "https://registry.yarnpkg.com/github-markdown-css/-/github-markdown-css-2.10.0.tgz#0612fed22816b33b282f37ef8def7a4ecabfe993"
+  integrity sha512-RX5VUC54uX6Lvrm226M9kMzsNeOa81MnKyxb3J0G5KLjyoOySOZgwyKFkUpv6iUhooiUZdogk+OTwQPJ4WttYg==
 
-"graceful-readlink@>= 1.0.0":
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/graceful-readlink/-/graceful-readlink-1.0.1.tgz#4cafad76bc62f02fa039b2f94e9a3dd3a391a725"
-  integrity sha1-TK+tdrxi8C+gObL5Tpo906ORpyU=
-
-highlight.js@9.12.0:
-  version "9.12.0"
-  resolved "https://registry.yarnpkg.com/highlight.js/-/highlight.js-9.12.0.tgz#e6d9dbe57cbefe60751f02af336195870c90c01e"
-  integrity sha1-5tnb5Xy+/mB1HwKvM2GVhwyQwB4=
+highlight.js@^9.12.0:
+  version "9.18.1"
+  resolved "https://registry.yarnpkg.com/highlight.js/-/highlight.js-9.18.1.tgz#ed21aa001fe6252bb10a3d76d47573c6539fe13c"
+  integrity sha512-OrVKYz70LHsnCgmbXctv/bfuvntIKDz177h0Co37DQ5jamGZLVmoCVMtjMtNZY3X9DrCcKfklHPNeA0uPZhSJg==
 
 linkify-it@^2.0.0:
   version "2.0.3"
@@ -48,43 +41,43 @@ lodash.assign@~4.2.0:
   resolved "https://registry.yarnpkg.com/lodash.assign/-/lodash.assign-4.2.0.tgz#0d99f3ccd7a6d261d19bdaeb9245005d285808e7"
   integrity sha1-DZnzzNem0mHRm9rrkkUAXShYCOc=
 
-markdown-it-anchor@4.0.0:
+markdown-it-anchor@^4.0.0:
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/markdown-it-anchor/-/markdown-it-anchor-4.0.0.tgz#e87fb5543e01965adf71506c6bf7b0491841b7e3"
   integrity sha1-6H+1VD4BllrfcVBsa/ewSRhBt+M=
   dependencies:
     string "^3.3.3"
 
-markdown-it-html5-embed@0.3.2:
-  version "0.3.2"
-  resolved "https://registry.yarnpkg.com/markdown-it-html5-embed/-/markdown-it-html5-embed-0.3.2.tgz#d3eb4ebbb4327addeb17843cd71a5c9300e36e69"
-  integrity sha1-0+tOu7Qyet3rF4Q81xpckwDjbmk=
+markdown-it-html5-embed@^0.3.2:
+  version "0.3.3"
+  resolved "https://registry.yarnpkg.com/markdown-it-html5-embed/-/markdown-it-html5-embed-0.3.3.tgz#467e11680e50d512a821ac0b5cd2db4669cd5cc4"
+  integrity sha512-qurfIqiJtuX7UucM0lHkLrKvgh1gaj56DF3cqatjKqTAIoG3h8Xq+CCVmb8eE5o4tNnXAnNNIiHZ1ZErVoYMMg==
   dependencies:
     mimoza "~1.0.0"
 
-markdown-it-table-of-contents@0.3.2:
-  version "0.3.2"
-  resolved "https://registry.yarnpkg.com/markdown-it-table-of-contents/-/markdown-it-table-of-contents-0.3.2.tgz#4fc91b1f53a8b355356c393140491b5d8626bee7"
-  integrity sha1-T8kbH1Oos1U1bDkxQEkbXYYmvuc=
+markdown-it-table-of-contents@^0.3.2:
+  version "0.3.6"
+  resolved "https://registry.yarnpkg.com/markdown-it-table-of-contents/-/markdown-it-table-of-contents-0.3.6.tgz#2a733c52485cd47769365402681987ed7d9e64a9"
+  integrity sha512-zeG6PxwQ4iPx3ujpZck3lVwzqvm1+b45RQW4gawHXR6T9kTUF3zT16IoBvMAdpiReZpg5tbNkhMxU841ocbfgg==
   dependencies:
     lodash.assign "~4.2.0"
     string "~3.3.3"
 
-markdown-it@8.3.1:
-  version "8.3.1"
-  resolved "https://registry.yarnpkg.com/markdown-it/-/markdown-it-8.3.1.tgz#2f4b622948ccdc193d66f3ca2d43125ac4ac7323"
-  integrity sha1-L0tiKUjM3Bk9ZvPKLUMSWsSscyM=
+markdown-it@^8.3.1:
+  version "8.4.2"
+  resolved "https://registry.yarnpkg.com/markdown-it/-/markdown-it-8.4.2.tgz#386f98998dc15a37722aa7722084f4020bdd9b54"
+  integrity sha512-GcRz3AWTqSUphY3vsUqQSFMbgR38a4Lh3GWlHRh/7MRwz8mcu9n2IO7HOh+bXHrR9kOPDl5RNCaEsrneb+xhHQ==
   dependencies:
     argparse "^1.0.7"
     entities "~1.1.1"
     linkify-it "^2.0.0"
     mdurl "^1.0.1"
-    uc.micro "^1.0.3"
+    uc.micro "^1.0.5"
 
-mathjax@2.7.0:
-  version "2.7.0"
-  resolved "https://registry.yarnpkg.com/mathjax/-/mathjax-2.7.0.tgz#2c12cac72a7be2b8190f6b3344ca93801a0e5dff"
-  integrity sha1-LBLKxyp74rgZD2szRMqTgBoOXf8=
+mathjax@^2.7.0:
+  version "2.7.4"
+  resolved "https://registry.yarnpkg.com/mathjax/-/mathjax-2.7.4.tgz#a88c55392b69a9715813cdc041ce02de6548a603"
+  integrity sha512-B6SLtoETmV08kqTepRyz8eqMRGFzllPy2QASKFdFl0g0YB6SNgQVnWae11RaF3/y8ZKLTJNJ7hLbMIqmBEkLzw==
 
 mdurl@^1.0.1:
   version "1.0.1"
@@ -113,7 +106,12 @@ string@^3.3.3, string@~3.3.3:
   resolved "https://registry.yarnpkg.com/string/-/string-3.3.3.tgz#5ea211cd92d228e184294990a6cc97b366a77cb0"
   integrity sha1-XqIRzZLSKOGEKUmQpsyXs2anfLA=
 
-uc.micro@^1.0.1, uc.micro@^1.0.3:
+uc.micro@^1.0.1:
   version "1.0.5"
   resolved "https://registry.yarnpkg.com/uc.micro/-/uc.micro-1.0.5.tgz#0c65f15f815aa08b560a61ce8b4db7ffc3f45376"
   integrity sha512-JoLI4g5zv5qNyT09f4YAvEZIIV1oOjqnewYg5D38dkQljIzpPT296dbIGvKro3digYI1bkb7W6EP1y4uDlmzLg==
+
+uc.micro@^1.0.5:
+  version "1.0.6"
+  resolved "https://registry.yarnpkg.com/uc.micro/-/uc.micro-1.0.6.tgz#9c411a802a409a91fc6cf74081baba34b24499ac"
+  integrity sha512-8Y75pvTYkLJW2hWQHXxoqRgV7qb9B+9vFEtidML+7koHUFapnVJAZ6cKs+Qjz5Aw3aZWHMC6u0wJE3At+nSGwA==
