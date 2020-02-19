@@ -46,3 +46,14 @@ fs.writeFile("mk2html.html", htmlFile, "utf8", function(err) {
 - [markdown-it-html5-embed](https://github.com/cmrd-senya/markdown-it-html5-embed)
 - [markdown-it-table-of-contents](https://github.com/Oktavilla/markdown-it-table-of-contents)
 - [mathjax](https://www.mathjax.org)
+
+
+----
+
+_Donate_
+
+**Bitcoin** 3GonBQ8XibkL9d5SDu5j7MccavV1VKXXet
+
+**Ethereum** 0xf3ca8c0630ceee045f715b5c596e70887a903d38
+
+**Monero** 86sR1arBcYW918Bf8NhN3bCynwGfbzMna48KfsffHi8L1UEKqwu6FVRR3canexk3jfByB99gWB5bSFxvAt2ZneigLmSNxJB
